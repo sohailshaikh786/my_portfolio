@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfillo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7657f635c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="#">
+                        <span>S</span>ohel.</a>
+                </h1>
+
+                <!-- <img src="images/logo.png " class="logo"> -->
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="header-text">
+                <P>Back-end Developer</P>
+                <h1>Hi, I'm <span class="auto-input"></span></span><br>From Indore</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!--About Section-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently pursuing my graduation in computer science and have knowledge in different
+                        languages ​​and technologies mentioned in profile. My interests are competitive programming, web
+                        development, and machine learning. I am looking forward to an opportunity to contribute the best
+                        of my skills for the betterment of the organization as well as to enhance my personal growth by
+                        learning from my experience too .</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>one</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>three</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Bachelor of technologies from SVVV</li>
+                            <li><span>2021</span><br>Higher Secondary from KV</li>
+                            <li><span>2019</span><br>Secondary Schooling from KV</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------service section------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Magni earum at
+                        iusto molestiae dolore explicabo quae
+                        laudantium velit unde rem ducimus
+                        reiciendis repellendus cum temporibus soluta,
+                        totam sunt. Odio, accusantium.</p>
+
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Back-end Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Magni earum at
+                        iusto molestiae dolore explicabo quae
+                        laudantium velit unde rem ducimus
+                        reiciendis repellendus cum temporibus soluta,
+                        totam sunt. Odio, accusantium.</p>
+
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Magni earum at
+                        iusto molestiae dolore explicabo quae
+                        laudantium velit unde rem ducimus
+                        reiciendis repellendus cum temporibus soluta,
+                        totam sunt. Odio, accusantium.</p>
+
+                    <a href="#">Learn More</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------------Portfollio Section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>I have created my own portfolio website where you can see all the information and work I have
+                            done.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+
+                        <h3>Architacture-Website</h3>
+                        <p>A portfolio website for interior designer where we showcase all projects.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Business Landing page</h3>
+                        <p>This is a business landing page create using HTML ,CSS and JS . You can visit by clicking
+                            here.
+                        </p>
+                        <a href="https://distracted-mcnulty-d55440.netlify.app/"><i
+                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class = "btn">See more</a>
+        </div>
+    </div>
+ <!---------------Contact------------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contct Me</h1>
+
+                <p ><i class="fa-solid fa-paper-plane"></i>sohelshaikh6851@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 78699 373731</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/_sohail.06/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sohel-shaikh-b0b4b319b/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="">  <i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1PeQlBjBwbWMNwmRJP7BdVLxO6SOaaI3G/view?usp=sharing" class = "btn btn2">Download CV</a>
+                </div>
+
+            
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Copyright 2022. Made with <i class="fa-solid fa-heart"></i> by Sohel Shaikh</p>
+    </div>
+
+ </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+        var typed = new Typed(".auto-input",{
+            strings:["Sohel Shaikh" ,"Web Developer","Engineer","Singer"], 
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
