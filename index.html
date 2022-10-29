@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/me.png">
+                    <img src="images/me2.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Django Developer</span><br>Designing Web App using Django</li>
                             <li><span>Web development</span><br>Web app development</li>
                             <li><span>App development</span><br>Building Android/ios apps</li>
                         </ul>
@@ -69,9 +69,9 @@
 
                     <div class="tab-contents " id="experience">
                         <ul>
-                            <li><span>one</span><br>Designing Web/App interfaces</li>
+                            <li><span>Experience 1</span><br>Designing Web/App interfaces</li>
                             <li><span>Web development</span><br>Web app development</li>
-                            <li><span>three</span><br>Building Android/ios apps</li>
+                            <li><span>Experience 3</span><br>Building Android/ios apps</li>
                         </ul>
                     </div>
 
@@ -179,7 +179,7 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contct Me</h1>
+                <h1 class="sub-title">Contact Me</h1>
 
                 <p ><i class="fa-solid fa-paper-plane"></i>sohelshaikh6851@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i>+91 78699 373731</p>
@@ -194,12 +194,13 @@
 
             
             <div class="contact-right">
-                <form >
+                <form  name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
 
         </div>
@@ -247,6 +248,24 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxd0LYoXBjGOORW9FhoJS-nSy7SEtyh5wBLzUJ-zDwjCRz3fO3eldf8v161zWp5NvHO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset( )
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+      </script>
 
 </body>
 
